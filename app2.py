@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/')
 def reverse_message():
     # Make a request to the first service
-    response = requests.get('http://localhost:5000/')
+    response = requests.get('http://app1-service:5000/')
     data = response.json()
 
     # Reverse the message
@@ -20,5 +20,5 @@ def reverse_message():
     return jsonify(reversed_response)
 
 if __name__ == '__main__':
-    app.run(host='localhost', port=5001)
+    app.run(host='0.0.0.0', port=5001)
 

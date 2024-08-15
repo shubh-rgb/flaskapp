@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: app1
-        image: shubh301/app1:latest
+        image: shubh301/app1-new1:latest
         ports:
         - containerPort: 5000
         resources:
@@ -39,3 +39,4 @@ spec:
   - protocol: TCP
     port: 5000
     targetPort: 5000
+    nodePort: 30002

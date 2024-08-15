@@ -10,5 +10,9 @@ COPY app1.py .
 # Install the Flask library
 RUN pip install Flask
 
+#expose port
+EXPOSE 5000
+
 # Specify the command to run the application
 CMD ["python", "app1.py"]
+

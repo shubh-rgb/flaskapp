@@ -10,5 +10,8 @@ COPY app2.py .
 # Install the Flask and Requests libraries
 RUN pip install Flask requests
 
+#expose port
+EXPOSE 5001
+
 # Specify the command to run the application
 CMD ["python", "app2.py"]
