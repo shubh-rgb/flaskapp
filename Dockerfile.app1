@@ -1,0 +1,14 @@
+# Use the official Python image from the Docker Hub
+FROM python:3.9-slim
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy the application code into the container
+COPY app1.py .
+
+# Install the Flask library
+RUN pip install Flask
+
+# Specify the command to run the application
+CMD ["python", "app1.py"]
