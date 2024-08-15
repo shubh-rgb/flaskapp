@@ -1,0 +1,39 @@
+1. Clarity of the Instructions:
+The instructions were generally clear, detailing each step required to complete the challenge. 
+The challenge was well-structured, and it was easy to understand what was expected at each stage. 
+
+2.Difficulty Level of the Challenge:
+The challenge was moderately difficult, appropriate for someone with experience in DevOps and cloud engineering. 
+It tested a range of skills, from application development to containerization and Kubernetes deployment. 
+The inclusion of both Docker and Kubernetes added complexity, making it a comprehensive test of practical DevOps skills.
+
+3. Technologies, Tools, and Approach Used:
+
+Technologies: Docker, Kubernetes, Flask (for Python applications), and Minikube.
+Tools: The challenge required familiarity with Docker for containerization, Kubernetes for orchestration, and bash scripting for automation.
+Approach: The approach was sequential, requiring the completion of one task before moving on to the next, 
+which was logical and ensured that all aspects of the challenge were covered.
+
+4. Areas Found Particularly Challenging or Frustrating:
+
+Service Communication in Kubernetes: Setting up communication between the two services in Kubernetes required careful attention to service names and ports. 
+Misconfigurations in these areas led to connectivity issues, which were challenging to debug.
+Docker and Kubernetes Integration: Ensuring that Docker images were correctly built, pushed, 
+and then deployed in Kubernetes without authentication issues was tricky, especially with private repositories.
+Port Forwarding: Testing services locally using port forwarding in Kubernetes was challenging and required some troubleshooting.
+
+5. Meaning of this Coding Challenge:
+The challenge was a practical test of essential DevOps skills. It evaluated the ability to:
+
+Develop and containerize applications.
+Deploy and manage containerized applications in a Kubernetes environment.
+Automate the entire process using scripts.
+It reflected real-world scenarios where multiple services need to interact within a Kubernetes cluster,
+making it a valuable exercise for anyone in a DevOps role.
+
+6. Suggestions for Improvement:
+Clarify Kubernetes Environment: Explicitly stating that services should communicate via Kubernetes service names rather than localhost 
+could prevent common mistakes.
+Error Handling: Including a note on handling common errors or providing hints for debugging could make the challenge less frustrating.
+Automated Testing: Including a simple automated test suite that candidates can use to validate their deployment would be beneficial.
+
